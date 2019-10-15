@@ -216,21 +216,24 @@ body {
 	align-self: center;
 	justify-self: center;
 }
-.advantages-button button {
+button {
 	height: 75px;
     width: auto;
     font-family: 'Lobster', cursive;
-    background-color: #fff;
+    background-color: #CF384C;
     color: #fff;
     font-size: 1.5em;
-	border-radius: 15px;
-	box-shadow: inset 0px 0px 0px 75px #CF384C;
-	transition: all ease 0.5s;
+	border-radius: 10px;
+	transition: all ease 0.1s;
+	/* border: 2px solid #fff; */
 }
-.advantages-button button:hover {
-	/* box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,1);
-	color: #000; */
-	padding: 20px;
+button:hover,
+button:focus {
+  /* box-shadow: 
+    inset -8em 0 0 0 #fff,
+	inset 15em 0 0 0 #fff;  
+color: #CF384C; */
+border: 3px solid #fff;
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
