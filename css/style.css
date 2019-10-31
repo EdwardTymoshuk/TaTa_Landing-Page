@@ -69,14 +69,30 @@ body {
 	height: 2px;
 	background-color: #613F75;
 	content: "";
-	transition: width 0.4s ease-out;
+	transition: 0.4s ease-in;
 }
-.navbar-nav a:focus, .navbar-nav a:hover {
+.navbar-nav a:hover {
 	color: #613F75;
 }
-.navbar-nav a:focus::after, .navbar-nav a:hover::after {
+.navbar-nav a:hover::after {
 	width: 100%;
 }
+.navbar-nav a.active {
+	color: #613F75;
+}
+.navbar-nav a.active:after {
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 50%; 
+	transform: translateX(-50%);
+	height: 2px;
+	background-color: #613F75;
+	content: "";
+	transition: 0.4s ease-in;
+	width: 100%;
+}
+
 .fa-align-justify {
 	font-size: 1.8em;
 	line-height: 1.8em;
@@ -198,6 +214,7 @@ body {
 .advantages {
 	display: grid;
 	background-image: url(../img/bg2-2.png);
+	background-size: cover;
 	background-color: #e1ace8;
 	min-height: 100vh;
 	width: 100vw;
@@ -222,17 +239,22 @@ body {
 	align-items: center;
 	align-self: center;
 	grid-template-columns: 3fr 1fr;
-	transition: ease-in .3s
+	transition: ease-in .2s;
+	height: 196px;
+	padding: 25px;
 }
 .advantages-container:last-child {
 	grid-template-columns: 1fr 3fr;
 }
+.advantages-container:hover {
+	transform: scale(1.1, 1.1);
+	border-radius: 20px;
+}
 .advantages-container span {
-	padding: 20px;
-	font-size: 1.3em;
+	font-size: 1.7em;
 	text-align: justify;
 	font-family: 'Bad Script', cursive;
-	margin: 50px;
+	margin: 20px;
 }
 .advantages-ico {
 	display: grid;
@@ -242,7 +264,7 @@ body {
 }
 .advantages-container:hover,
 .advantages-container:focus {
-	color: #613F75;
+	background-color: #fff;
 	cursor: pointer;
 }
 .free-lesson {
@@ -252,7 +274,7 @@ body {
 .free-lesson button {
 	height: 75px;
     width: auto;
-    font-family: 'Lobster', cursive;
+    font-family: 'Yeseva One', cursive;
     background-color: #613F75;
     color: #fff;
     font-size: 1.5em;
@@ -263,7 +285,8 @@ body {
 .free-lesson button:hover,
 .free-lesson button:focus {
  	background-color: #fff;
-    color: #613F75;
+	color: #613F75;
+	transform: scale(1.1, 1.1)
 }
 
 blockquote {
@@ -323,17 +346,19 @@ blockquote:before {
 .for-whom-content:focus {
 	background-color: #fff;
 	cursor: pointer;
+	transform: scale(1.1, 1.1)
 }
 .for-whom-container h2 {
 	text-align: center;
 	font-family: 'Lobster', cursive;
 	color: #613F75;
+	font-size: 3em;
 }
 .for-whom-container span {
 	text-align: center;
 	color: #000;
 	font-family: 'Bad Script', cursive;
-	font-size: 1.3em;
+	font-size: 1.7em;
 }
 .for-whom-ico {
 	display: grid;
@@ -342,8 +367,329 @@ blockquote:before {
 	padding: inherit;
 }
 
+/* HOW WE WORK PAGE */
+.how-we-work {
+	background-image: url(../img/bg2-2.png);
+	background-color: #e1ace8;
+	background-size: cover;
+	min-height: 100vh;
+	width: 100vw;
+}
+.how-we-work-header {
+	display: grid;
+	justify-content: center;
+	font-family: 'Yeseva One', cursive;
+	color: #613F75;
+	text-align: center;
+	padding: 50px 0;
+}
+.how-we-work-thumbnails {
+	list-style: none;
+	padding: 25px;
+	text-align: center;
+	margin-bottom: 0;
+}
+.how-we-work-thumbnails .thumbnail {
+	background-color: transparent;
+	border: none;
+}
+.how-we-work-thumbnails h3 {
+	font-family: 'Yeseva One', cursive;
+	color: #613F75;
+	font-size: 2em;
+}
+.how-we-work-thumbnails p {
+	color: #000;
+	font-family: 'Bad Script', cursive;
+	font-size: 1.7em;
+}
+.how-we-work-ico {
+	display: grid;
+	justify-content: center;
+	font-size: 14em;
+	padding: inherit;
+}
+.thumbnail {
+	transition: ease-in .2s;
+	border-radius: 20px;
+}
+.thumbnail:hover {
+	background-color: #fff;
+	cursor: pointer;
+	transform: scale(1.1, 1.1);
+}
+
+/* FEEDBACK PAGE */
+.feedback {
+	display: grid;
+	background-image: url(../img/bg2-2.png);
+	background-size: cover;
+	background-color: #e1ace8;
+	min-height: 100vh;
+	width: 100vw;
+}
+.feedback-header {
+	display: grid;
+	justify-content: center;
+	font-family: 'Yeseva One', cursive;
+	color: #613F75;
+	text-align: center;
+	padding: 50px 0;
+}
+.feedback-content {
+	justify-content: space-between;
+	text-align: justify;
+	display: inline-flex;
+	align-items: center;
+	align-self: center;
+	padding: 50px 0;
+	transition: ease-in .5s;
+}
+.feedback-content:hover, 
+.feedback-content:focus {
+	background-color: #fff;
+	cursor: pointer;
+	transform: scale(1.1, 1.1)
+}
+.feedback-container h2 {
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	color: #613F75;
+}
+.feedback-container span {
+	text-align: center;
+	color: #000;
+	font-family: 'Bad Script', cursive;
+	font-size: 1.3em;
+}
+.feedback-container img {
+	width: 75%;
+	height: auto;
+	border-right: 3px solid #613F75;
+	border-radius: 50%;
+}
+.feedback-img {
+	border-left: 5px solid #613F75;
+}
+
+/* PRICE PAGE */
+.price {
+	display: grid;
+	background-image: url(../img/bg2-2.png);
+	background-size: cover;
+	background-color: #e1ace8;
+	width: 100vw;
+}
+.price-header {
+	display: grid;
+	justify-content: center;
+	font-family: 'Yeseva One', cursive;
+	color: #613F75;
+	text-align: center;
+	padding: 50px 0;
+}
+.price-container {
+	padding: 50px 20px;
+	list-style: none;
+}
+.price-thumbnail {
+	background-color: #613F75;
+	text-align: center;
+	transition: all ease .4s;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.cont:hover .price-thumbnail,
+.cont:focus .price-thumbnail {
+	background-color: #613F75;
+	color: #fff;
+	transform: scale(1.1, 1.1);
+	z-index: 999;
+}
+/* .cont:first-child:hover .price-thumbnail,
+.cont:first-child:focus .price-thumbnail {
+	background-color: #613F75;
+	color: #fff;
+	transform: scale(1.1, 1.1);
+	z-index: 999;
+}
+.cont:last-child:hover .price-thumbnail,
+.cont:last-child:focus .price-thumbnail {
+	background-color: #613F75;
+	color: #fff;
+	transform: scale(1.2, 1.2);
+	z-index: 999;
+} */
+.price-thumbnail-content {
+	background-color: #613F75;
+	font-family: 'Yeseva One', cursive;
+    padding: 0;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #fff;
+}
+.price-thumbnail h1 {
+	margin: 20px;
+    padding-bottom: 40px;
+    color: burlywood;
+    border-bottom: 1px solid #fff;
+    font-size: 6em;
+    font-family: 'Yeseva One', cursive;
+}
+.price-thumbnail h3 {
+	padding: 20px 0;
+    font-size: 2em;
+}
+.price-thumbnail h4 {
+	color: burlywood;
+	padding: 20px 0;
+	font-size: 2.5em;
+}
+.price-thumbnail p {
+	padding: 10px 0;
+	font-size: 2em;
+}
+
+.price-thumbnail-button {
+    padding: 10px 0;
+}
+.price-thumbnail button {
+	font-family: 'Yeseva One', cursive;
+	background-color: #fff;
+	color: #613F75;
+	height: 50px;
+	transition: all ease .2s;
+}
+.price-thumbnail button:hover,
+.price-thumbnail button:focus {
+	transform: scale(1.1, 1.1);
+	background-color: burlywood;
+}
 
 
+
+/* CONTACT PAGE */
+.contact {
+	display: grid;
+	background-image: url(../img/bg2-2.png);
+	background-size: cover;
+	background-color: #e1ace8;
+	width: 100vw;
+}
+.contact-header {
+	display: grid;
+	justify-content: center;
+	font-family: 'Yeseva One', cursive;
+	color: #613F75;
+	text-align: center;
+	padding: 50px 0;
+}
+.contact-container {
+	padding: 20px 20px;
+}
+.contact-content {
+	border-right: 2px solid #613F75;
+	padding: 15px 15px;
+}
+.contact-content span{
+	text-align: center;
+	font-family: 'Yeseva One', cursive;
+	font-size: 1.7em;
+}
+.contact-contacts {
+	padding-top: 50px;
+}
+.contact-contacts ul{
+	text-align: start;
+	padding: 0;
+	color: #333;
+	font-family: 'Yeseva One', cursive;
+	font-size: 1.1em;
+	list-style: none;
+	font-weight: bold;
+}
+.contact-contacts p {
+	color: #000;
+}
+.contact-form {
+	align-self: center;
+}
+.contact-form-group {
+	align-items: center;
+	padding: 10px 0;
+}
+.contact-form-label {
+	line-height: 2em;
+	font-size: 1.3em;
+	font-family: 'Yeseva One', cursive;
+	color:#000;
+}
+.contact-form-input {
+	
+}
+.contact-form-input input {
+	height: 70px;
+}
+.contact-form-textarea {
+	
+}
+.contact-form-textarea textarea {
+	resize: none;
+}
+.contact-form-button {
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 20px;
+}
+.contact-form-button button {
+	font-family: 'Yeseva One', cursive;
+	background-color: #613F75;
+	color: #fff;
+	height: 50px;
+	transition: all ease .3s;
+}
+.contact-form-button button:hover,
+.contact-form-button button:focus {
+	background-color: #fff;
+	color: #613F75;
+	transform: scale(1.1, 1.1);
+}
+
+/* FOOTER */
+.footer {
+	height: 100px;
+	background-color: #fff;
+	color: #613F75;
+}
+.footer div {
+	align-self: center;
+}
+.footer h1 {
+	padding: 10px;
+	font-size: 1.2em;
+	text-align: start;
+}
+.footer h2 {
+	padding: 10px;
+	font-size: 1.2em;
+	text-align: center;
+}
+.footer h3 {
+	padding: 10px;
+	font-size: 1.2em;
+	text-align: end;
+}
+.footer a {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+}
+.footer a:hover,
+.footer a:hover {
+	color: burlywood;
+}
 @media (max-width: 1200px) and (min-width: 992px) {
 	.navbar {
 		font-size: 1.7em;
@@ -355,6 +701,12 @@ blockquote:before {
 	}
 	.navbar {
 		font-size: 1.2em;
+	}
+	.advantages-container {
+		height: 250px;
+	}
+	.advantages-container span {
+		font-size: 1.3em;
 	}
 }
 @media (min-width: 320px) and (max-width: 768px){
