@@ -610,8 +610,10 @@ blockquote:before {
 	list-style: none;
 	font-weight: bold;
 }
-.contact-contacts p {
+.contact-contacts a {
+	text-decoration: none;
 	color: #000;
+	cursor: pointer;
 }
 .contact-form {
 	align-self: center;
