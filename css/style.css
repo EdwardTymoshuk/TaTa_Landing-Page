@@ -4,6 +4,17 @@ body {
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-behavior: smooth;
+}
+.header {
+	display: grid;
+	justify-content: center;
+	font-family: 'Yeseva One', cursive;
+	color: #613F75;
+	padding: 75px 0;
+	text-align: center;
+}
 /* HOME PAGE */
 #header-block {
 	transition: background 0.2s ease-out;
@@ -204,7 +215,7 @@ body {
 	font-family: 'Yeseva One', cursive;
 	color: #613F75;
 	text-align: center;
-	padding: 50px 0;
+	padding: 75px 0;
 }
 .about-me-content p{
 	overflow-y: hidden;
@@ -225,7 +236,7 @@ body {
 	font-family: 'Yeseva One', cursive;
 	color: #613F75;
 	text-align: center;
-	padding: 50px 0;
+	padding: 75px 0;
 }
 .advantages-content {
 	justify-content: space-between;
@@ -587,7 +598,7 @@ blockquote:before {
 	padding: 50px 0;
 }
 .contact-container {
-	padding: 20px 20px;
+	padding: 0 20px 20px 20px;
 }
 .contact-content {
 	border-right: 2px solid #613F75;
@@ -717,5 +728,8 @@ blockquote:before {
 	font-size: 2em;
 	color: #613F75;
 	font-family: 'Bad Script', cursive;
+	}
+	.footer h1, h2, h3 {
+		text-align: center;
 	}
 }
