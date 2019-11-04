@@ -1,4 +1,4 @@
-body {
+html, body {
 	overflow-x: hidden;
 	max-width: 100vw;
 	margin: 0;
@@ -9,7 +9,9 @@ html {
 }
 .header {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-family: 'Yeseva One', cursive;
 	color: #613F75;
 	padding: 75px 0;
@@ -17,10 +19,13 @@ html {
 }
 /* HOME PAGE */
 #header-block {
+	-webkit-transition: background 0.2s ease-out;
 	transition: background 0.2s ease-out;
 }
 .header-navbar {
 	width: 100vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .header-socials {
@@ -46,7 +51,8 @@ html {
 	font-size: 1em;
 	display: grid;
 	justify-items: end;
-	align-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 }
 .header-languages a {
 	position: relative;
@@ -75,11 +81,13 @@ html {
 	position: absolute;
 	top: 50px;
 	left: 50%; 
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%); 
+	        transform: translateX(-50%);
 	width: 0;
 	height: 2px;
 	background-color: #613F75;
 	content: "";
+	-webkit-transition: 0.4s ease-in;
 	transition: 0.4s ease-in;
 }
 .navbar-nav a:hover {
@@ -96,10 +104,12 @@ html {
 	position: absolute;
 	top: 50px;
 	left: 50%; 
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%); 
+	        transform: translateX(-50%);
 	height: 2px;
 	background-color: #613F75;
 	content: "";
+	-webkit-transition: 0.4s ease-in;
 	transition: 0.4s ease-in;
 	width: 100%;
 }
@@ -122,7 +132,8 @@ html {
 	margin-top: -100px;
 	display: grid;
 	justify-items: center;
-	align-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 }
 .home-content h1 {
     text-align: center;
@@ -171,12 +182,15 @@ html {
 	width: 100vw;
 }
 .separator {
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	background-color: #fff;
 	margin-bottom: 0;
 }
 .separator h2 {
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 	text-align: center;
 	color: #613F75;
 	font-family: 'Yeseva One', cursive;
@@ -189,8 +203,11 @@ html {
 	text-align: center;
 }
 .about-me-container {
-	align-content: center;
-    align-items: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 	justify-self: center;
 }
 .about-me-container strong {
@@ -198,7 +215,9 @@ html {
 	font-size: 1.1em;
 }
 .about-me-photo {
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 50px 0;
 }
 .about-me-photo img {
@@ -232,24 +251,32 @@ html {
 }
 .advantages-header {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-family: 'Yeseva One', cursive;
 	color: #613F75;
 	text-align: center;
 	padding: 75px 0;
 }
 .advantages-content {
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .advantages-content:first-child {
-	align-content: flex-start;
+	-ms-flex-line-pack: start;
+	    align-content: flex-start;
 }
 .advantages-container {
 	text-align: justify;
 	display: grid;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	align-self: center;
 	grid-template-columns: 3fr 1fr;
+	-webkit-transition: ease-in .2s;
 	transition: ease-in .2s;
 	height: 196px;
 	padding: 25px;
@@ -258,7 +285,8 @@ html {
 	grid-template-columns: 1fr 3fr;
 }
 .advantages-container:hover {
-	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	        transform: scale(1.1, 1.1);
 	border-radius: 20px;
 }
 .advantages-container span {
@@ -269,7 +297,9 @@ html {
 }
 .advantages-ico {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-size: 7em;
 	padding: inherit;
 }
@@ -279,7 +309,8 @@ html {
 	cursor: pointer;
 }
 .free-lesson {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 	justify-self: center;
 }
 .free-lesson button {
@@ -290,6 +321,7 @@ html {
     color: #fff;
     font-size: 1.5em;
 	border-radius: 10px;
+	-webkit-transition: all ease .3s;
 	transition: all ease .3s;
 	margin: 50px 0;
 }
@@ -297,7 +329,8 @@ html {
 .free-lesson button:focus {
  	background-color: #fff;
 	color: #613F75;
-	transform: scale(1.1, 1.1)
+	-webkit-transform: scale(1.1, 1.1);
+	        transform: scale(1.1, 1.1)
 }
 
 blockquote {
@@ -338,26 +371,37 @@ blockquote:before {
 }
 .for-whom-header {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-family: 'Yeseva One', cursive;
 	color: #613F75;
 	padding: 50px 0;
 	text-align: center;
 }
 .for-whom-content {
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	text-align: justify;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
-	align-items: center;
-	align-self: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 	padding: 50px 0;
+	-webkit-transition: ease-in .5s;
 	transition: ease-in .5s;
 }
 .for-whom-content:hover, 
 .for-whom-content:focus {
 	background-color: #fff;
 	cursor: pointer;
-	transform: scale(1.1, 1.1)
+	-webkit-transform: scale(1.1, 1.1);
+	        transform: scale(1.1, 1.1)
 }
 .for-whom-container h2 {
 	text-align: center;
@@ -373,7 +417,9 @@ blockquote:before {
 }
 .for-whom-ico {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-size: 14em;
 	padding: inherit;
 }
@@ -388,7 +434,9 @@ blockquote:before {
 }
 .how-we-work-header {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-family: 'Yeseva One', cursive;
 	color: #613F75;
 	text-align: center;
@@ -416,18 +464,22 @@ blockquote:before {
 }
 .how-we-work-ico {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-size: 14em;
 	padding: inherit;
 }
 .thumbnail {
+	-webkit-transition: ease-in .2s;
 	transition: ease-in .2s;
 	border-radius: 20px;
 }
 .thumbnail:hover {
 	background-color: #fff;
 	cursor: pointer;
-	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	        transform: scale(1.1, 1.1);
 }
 
 /* FEEDBACK PAGE */
@@ -441,26 +493,37 @@ blockquote:before {
 }
 .feedback-header {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-family: 'Yeseva One', cursive;
 	color: #613F75;
 	text-align: center;
 	padding: 50px 0;
 }
 .feedback-content {
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	text-align: justify;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
-	align-items: center;
-	align-self: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 	padding: 50px 0;
+	-webkit-transition: ease-in .5s;
 	transition: ease-in .5s;
 }
 .feedback-content:hover, 
 .feedback-content:focus {
 	background-color: #fff;
 	cursor: pointer;
-	transform: scale(1.1, 1.1)
+	-webkit-transform: scale(1.1, 1.1);
+	        transform: scale(1.1, 1.1)
 }
 .feedback-container h2 {
 	text-align: center;
@@ -493,7 +556,9 @@ blockquote:before {
 }
 .price-header {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-family: 'Yeseva One', cursive;
 	color: #613F75;
 	text-align: center;
@@ -506,6 +571,7 @@ blockquote:before {
 .price-thumbnail {
 	background-color: #613F75;
 	text-align: center;
+	-webkit-transition: all ease .4s;
 	transition: all ease .4s;
 	margin: 0;
 	padding: 0;
@@ -515,7 +581,8 @@ blockquote:before {
 .cont:focus .price-thumbnail {
 	background-color: #613F75;
 	color: #fff;
-	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	        transform: scale(1.1, 1.1);
 	z-index: 999;
 }
 /* .cont:first-child:hover .price-thumbnail,
@@ -571,11 +638,13 @@ blockquote:before {
 	background-color: #fff;
 	color: #613F75;
 	height: 50px;
+	-webkit-transition: all ease .2s;
 	transition: all ease .2s;
 }
 .price-thumbnail button:hover,
 .price-thumbnail button:focus {
-	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	        transform: scale(1.1, 1.1);
 	background-color: burlywood;
 }
 
@@ -591,7 +660,9 @@ blockquote:before {
 }
 .contact-header {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-family: 'Yeseva One', cursive;
 	color: #613F75;
 	text-align: center;
@@ -627,10 +698,13 @@ blockquote:before {
 	cursor: pointer;
 }
 .contact-form {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 }
 .contact-form-group {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 10px 0;
 }
 .contact-form-label {
@@ -652,8 +726,13 @@ blockquote:before {
 	resize: none;
 }
 .contact-form-button {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 	padding: 20px;
 }
 .contact-form-button button {
@@ -661,13 +740,15 @@ blockquote:before {
 	background-color: #613F75;
 	color: #fff;
 	height: 50px;
+	-webkit-transition: all ease .3s;
 	transition: all ease .3s;
 }
 .contact-form-button button:hover,
 .contact-form-button button:focus {
 	background-color: #fff;
 	color: #613F75;
-	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	        transform: scale(1.1, 1.1);
 }
 
 /* FOOTER */
@@ -677,7 +758,8 @@ blockquote:before {
 	color: #613F75;
 }
 .footer div {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 }
 .footer h1 {
 	padding: 10px;

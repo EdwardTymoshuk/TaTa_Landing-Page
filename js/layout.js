@@ -48,4 +48,5 @@
         e.preventDefault();
         home.scrollIntoView();
     })
+    
 }())

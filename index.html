@@ -500,7 +500,7 @@
     <div class="header revealator-zoomin revealator-once">
       <h1>Як зі мною зв'язатися ?</h1>
     </div>
-    <div class="contact-container row revealator-zoomin revealator-once">
+    <div class="contact-container row">
       <div class="contact-content col-sm-12 col-md-4">
         <span>
           Якщо Вас цікавлять якісні ЮРИДИЧНІ ПОСЛУГИ найкращого адоката - зв`яжіться з нами в будь який, вигідний для
@@ -516,7 +516,13 @@
           </ul>
         </div>
       </div>
-      <form id="contact-form" class="contact-form col-sm-12 col-md-8">
+      <form id="contact-form" class="contact-form col-sm-12 col-md-8 evealator-zoomin revealator-once">
+<!-- Hidden Required Fields -->
+<input type="hidden" name="project_name" value="Site Name">
+<input type="hidden" name="admin_email" value="eduard.tymoshuk@gmail.com">
+<input type="hidden" name="form_subject" value="Form Subject">
+<!-- END Hidden Required Fields -->
+
         <div class="contact-form-group row">
           <div class="contact-form-label col-sm-12">
             <label for="name">Ім`я:</label>
@@ -551,7 +557,7 @@
             </div>
         <div class="contact-form-group row revealator-zoomin revealator-once">
           <div class="contact-form-button col-sm-12">
-            <button  class="btn">Відправити</button>
+            <button class="btn">Відправити</button>
           </div>
         </div>
       </form>
@@ -582,16 +588,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="js/layout.js" type="text/javascript"></script>
-  <script src="js/viewportchecker.js"></script>
   <script src="js/fm.revealator.jquery.js"></script>
+  <script src="js/script.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            $('.navbar-nav').viewportChecker();
-        });
-    </script>
 </body>
-
 </html>
