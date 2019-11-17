@@ -23,9 +23,27 @@ html {
 	text-align: start;
 	align-self: center;
 }
-.header-socials a{
+.header-socials-items a{
+	padding-right: 20px;
 	color: #000;
 	text-decoration: none;
+}
+.header-socials-items i{
+	font-size: 3em;
+	-webkit-transition: all ease .3s;
+	transition: all ease .3s;
+}
+.header-socials-items .fa-skype:focus,
+.header-socials-items .fa-skype:hover {
+	color: #00AFF0;
+}
+.header-socials-items .fa-phone:focus,
+.header-socials-items .fa-phone:hover {
+	color: #59267c;
+}
+.header-socials-items .fa-envelope-o:focus,
+.header-socials-items .fa-envelope-o:hover {
+	color: #D44638;
 }
 .header-logo {
 	text-align: center;
@@ -49,6 +67,8 @@ html {
 	color: #000;
 	cursor: pointer;
 	text-decoration: none;
+	-webkit-transition: all ease .3s;
+	transition: all ease .3s;
 }
 .header-languages a:focus,
 .header-languages a:hover {
@@ -108,12 +128,13 @@ html {
 .home {
 	display: grid; 
 	cursor: default;
-	background: #fff;
+	background-image: url(../img/bg_home.png);
 	background-attachment: fixed;
 	background-position: left bottom;
     background-size: cover;
 	min-width: 100vw;
-    max-height: 100%;
+	min-height: 100vh;
+    max-height: 100vh;
 }
 .home-content {
 	margin-top: -100px;
@@ -288,7 +309,8 @@ html {
 	display: grid;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
-	        justify-content: center;
+			justify-content: center;
+	align-self: center;
 	font-size: 14em;
 	padding: inherit;
 }
@@ -482,80 +504,73 @@ html {
 	width: 100vw;
 }
 .contact-container {
-	padding: 0 20px 20px 20px;
+	padding-bottom: 50px;
 }
-.contact-content {
-	border-right: 2px solid #613F75;
-	padding: 15px 15px;
-}
-.contact-content span{
+.contact-article {
+	font-size: 2em;
+	font-family: 'Bad script', cursive;
 	text-align: center;
+	padding-bottom: 50px;
+}
+.contact-social {
+	align-self: center;
 	font-family: 'Yeseva One', cursive;
-	font-size: 1.7em;
 }
-.contact-contacts {
-	padding-top: 50px;
-}
-.contact-contacts ul{
-	text-align: start;
-	padding: 0;
-	color: #333;
-	font-family: 'Yeseva One', cursive;
-	font-size: 1.1em;
-	list-style: none;
-	font-weight: bold;
-}
-.contact-contacts a {
-	text-decoration: none;
-	color: #000;
-	cursor: pointer;
-}
-.contact-form {
-	-ms-flex-item-align: center;
-	    align-self: center;
-}
-.contact-form-group {
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	padding: 10px 0;
-}
-.contact-form-label {
-	line-height: 2em;
-	font-size: 1.3em;
-	font-family: 'Yeseva One', cursive;
-	color:#000;
-}
-.contact-form-input input {
-	height: 70px;
-}
-.contact-form-textarea textarea {
-	resize: none;
-}
-.contact-form-button {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+.contact-social .col-4,
+.contact-social .col-md-12 {
+	display: grid;
 	padding: 20px;
 }
-.contact-form-button button {
+.contact-social i {
+	justify-self: center;
+	font-size: 4em;
+}
+.contact-social span {
+	justify-self: center;
+	font-size: 1.2em;
+}
+.contact-social .fa-skype {
+	color: #00AFF0;
+}
+.contact-social .fa-phone {
+	color: #59267c;
+}
+.contact-social .fa-envelope-o {
+	color: #D44638;
+}
+.contact-form {
+	align-self: center;
 	font-family: 'Yeseva One', cursive;
-	background-color: #613F75;
-	color: #fff;
-	height: 50px;
+}
+.contact-form label {
+	font-size: 1.2em;
+}
+.contact-form input {
+	line-height: 3em;
+}
+.contact-form textarea {
+	height: auto;
+	resize: none;
+}
+.contact-form button {
+	line-height: 2em;
+	float: right;
+	font-family: 'Yeseva One', cursive;
+    background-color: #613F75;
+    color: #fff;
 	-webkit-transition: all ease .3s;
 	transition: all ease .3s;
 }
-.contact-form-button button:hover,
-.contact-form-button button:focus {
+.contact-form button:focus,
+.contact-form button:hover {
 	background-color: #fff;
 	color: #613F75;
 	-webkit-transform: scale(1.1, 1.1);
 	        transform: scale(1.1, 1.1);
+}
+.contact-form a {
+	text-decoration: none;
+	color: inherit;
 }
 /* FOOTER */
 .footer {
@@ -722,7 +737,6 @@ blockquote:before {
 		padding-top: 75px;
 		font-size: 6em;
 	}
-	
 	.advantages-container span {
 		font-size: .9em;
 	}
@@ -742,8 +756,7 @@ blockquote:before {
 		font-size: 1.3em;
 	}
 	.for-whom-ico {
-		font-size: 9em;
-		align-self: center;
+		display: none;
 	}
 	.how-we-work-thumbnails h3 {
 		font-size: 2em;
@@ -753,6 +766,14 @@ blockquote:before {
 	}
 	.how-we-work-ico {
 		font-size: 9em;
+	}
+	.contact-social i {
+		justify-self: center;
+		font-size: 3em;
+	}
+	.contact-social span {
+		justify-self: center;
+		font-size: 1em;
 	}
 	.footer h1, h2, h3 {
 		text-align: center !important;
