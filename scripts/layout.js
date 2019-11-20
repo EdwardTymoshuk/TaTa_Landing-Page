@@ -58,12 +58,11 @@
 
     let freeLessonsBtns = document.querySelectorAll('#free-lesson-btn');
 
-    contactSubject.value = `Безкоштовний перший урок`;
-    contactMessage.value = `Доброго дня, я б хотів(-ла) отримати безкоштовний урок французької.`;
-
     freeLessonsBtns.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
+            contactSubject.value = `Безкоштовний перший урок`;
+            contactMessage.value = `Доброго дня, я б хотів(-ла) отримати безкоштовний урок французької.`;
             contact.scrollIntoView();
         })
     })

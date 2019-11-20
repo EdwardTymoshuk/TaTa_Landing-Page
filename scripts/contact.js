@@ -2,26 +2,26 @@ $(document).ready(function () {
 	
     $("#submit").on("click", function() {
     
-        var name = $("#name").val(); // Получаем имя
-        var email = $("#email").val(); // Получаем e-mail
-        var message = $("#message").val(); // Получаем сообщение
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var subj = $("#subject").val();
+        var message = $("#message").val(); 
         
         $.ajax({
         
-            url: "mail.php", // Куда отправляем данные (обработчик)
+            url: "mail.php",
             type: "post",
 
             data: {
                 "name": name,
                 "email": email,
+                "subject": subj,
                 "message": message
             },
 
             success: function(data) {
-                
-                $(".result").html(data); // Выводим результат
-                $("#name").val(''), $("#email").val(''), $("#message").val('');
-                console.log("Zalupien");
+                $(".result").html(data);
+                $("#name").val(''), $("#email").val(''), $("#subject").val(''), $("#message").val('');
             }
             
             

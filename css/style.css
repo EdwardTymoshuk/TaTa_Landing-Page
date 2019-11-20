@@ -1,5 +1,6 @@
 /* MAIN STYLES */
 html, body {
+	font-size: 14px;
 	overflow-x: hidden;
 	max-width: 100vw;
 	margin: 0;
@@ -22,6 +23,9 @@ html {
 .header-socials {
 	text-align: start;
 	align-self: center;
+}
+.header-socials-items {
+	display: inline-flex;
 }
 .header-socials-items a{
 	padding-right: 20px;
@@ -77,6 +81,7 @@ html {
 .navbar {
 	font-family: 'Lobster', cursive;
 	font-size: 2em;
+	padding-bottom: 10px
 }
 .navbar-nav a {
 	position: relative;
@@ -392,7 +397,8 @@ html {
 	background-color: #fff;
 	cursor: pointer;
 	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1)
+			transform: scale(1.1, 1.1);
+	z-index: 999;
 }
 .feedback-container h2 {
 	text-align: center;
@@ -660,6 +666,7 @@ html {
 }
 .free-lesson button:hover,
 .free-lesson button:focus {
+	cursor: pointer;
  	background-color: #fff;
 	color: #613F75;
 	-webkit-transform: scale(1.1, 1.1);
@@ -701,14 +708,36 @@ blockquote:before {
 	.navbar {
 		font-size: 1.3em;
 	}
-	.advantages-container {
-		height: 250px;
-	}
 	.advantages-container span {
 		font-size: 1.3em;
+		margin: 0;
+	}
+	.how-we-work-ico {
+		font-size: 10em;
+		padding: 10px;
+	}
+	.how-we-work-thumbnails h3 {
+		font-size: 1.7em
+	}
+	.how-we-work-thumbnails p {
+		color: #000;
+		font-family: 'Bad Script', cursive;
+		font-size: 1.3em;
+	}
+	.price-thumbnail h1 {
+		font-size: 4.5em;
+	}
+	.price-thumbnail h3 {
+		font-size: 1.8em;
+	}
+	.price-thumbnail h4 {
+		font-size: 2.2em;
+	}
+	.price-thumbnail p {
+		font-size: 1.8em;
 	}
 }
-@media (min-width: 320px) and (max-width: 768px){
+@media (min-width: 320px) and (max-width: 767px){
 	.navbar {
 		font-size: 1.2em;
 	}
@@ -716,7 +745,7 @@ blockquote:before {
 		font-size: 3em;
 	}
 	.header-socials a {
-		font-size: .7em;
+		font-size: .6em;
 	}
 	.home{
 	background-color: #fff !important;
@@ -726,6 +755,15 @@ blockquote:before {
 	.header-socials p {
 		font-size: 1em;
 		margin: 0;
+	}
+	.header-socials-items {
+		font-size: 1.2em;
+		display: inline-flex;
+		justify-content: space-evenly;
+		padding: inherit;
+	}
+	.header-socials-items a{
+		padding-right: 0;
 	}
 	.home-content h3{
 		text-align: center;
@@ -737,17 +775,18 @@ blockquote:before {
 		padding-top: 75px;
 		font-size: 6em;
 	}
-	.advantages-container span {
-		font-size: .9em;
+	.about-me-photo {
+		 padding-bottom: 20px;
 	}
-	.separator h2 {
-		font-size: 2em;
-	}
-	.separator p {
-		font-size: 1em;
+	.advantages-container {
+		padding: 20px;
 	}
 	.advantages-container span {
+		margin: 10px;
 		font-size: 1.3em;
+	}
+	.for-whom-content {
+		padding: 20px 20px;
 	}
 	.for-whom-container h2 {
 		font-size: 2em;
@@ -758,6 +797,9 @@ blockquote:before {
 	.for-whom-ico {
 		display: none;
 	}
+	.thumbnail {
+		padding: 10px;
+	}
 	.how-we-work-thumbnails h3 {
 		font-size: 2em;
 	}
@@ -766,6 +808,9 @@ blockquote:before {
 	}
 	.how-we-work-ico {
 		font-size: 9em;
+	}
+	.feedback-content {
+		padding: 10px 30px;
 	}
 	.contact-social i {
 		justify-self: center;
@@ -777,5 +822,16 @@ blockquote:before {
 	}
 	.footer h1, h2, h3 {
 		text-align: center !important;
+	}
+	.separator h2 {
+		font-size: 2em;
+	}
+	.separator p {
+		font-size: 1em;
+	}
+	.free-lesson button {
+		font-size: 1.2em;
+		height: 75px;
+		width: 75vw;
 	}
 }

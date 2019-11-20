@@ -6,7 +6,7 @@
   <title>French lessons online with skype. Уроки французької мови - французька онлайн через скайп</title>
   <meta name="description" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bad+Script|Lobster|Pacifico&display=swap"
     rel="stylesheet">
@@ -17,8 +17,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -53,7 +52,7 @@
       </div>
       <div class="header-navbar">
         <nav id="nav" class="navbar navbar-expand-md mx-auto">
-          <div class="container">
+          <div class="container-fluid">
             <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="fa fa-align-justify"></span>
@@ -163,8 +162,8 @@
 
   <!-- VIDEO BLOCK -->
   <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="mov/video.mp4"
-      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item" src="mov/video.mp4" autostart="false" preload="none"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" controls allowfullscreen></iframe>
   </div>
   <!-- /END OF VIDEO BLOCK -->
 
@@ -173,56 +172,56 @@
     <div class="header ">
       <h1>Що ви отримуєте навчаючись зі мною ?</h1>
     </div>
-    <div class='advantages-content container'>
+    <div class='advantages-content container-fluid'>
       <div class="row">
-        <div class="advantages-container col col-md-6">
+        <div class="advantages-container col-sm-12 col-md-6">
           <span>
             - можливість інтенсивної мовної практики у себе вдома чи на роботі
           </span>
           <i class="advantages-ico fa fa-comments"></i>
         </div>
-        <div class="advantages-container col col-md-6">
+        <div class="advantages-container col-sm-12 col-md-6">
           <i class="advantages-ico fa fa-line-chart"></i>
           <span>
             - розробка індивідуального плану уроку та матеріалів до нього,
             обговорення тем, які сфокусовані саме на ваших вподобаннях та цілях
           </span>
         </div>
+        </div>
       </div>
-    </div>
-    <div class='advantages-content container'>
+    <div class='advantages-content container-fluid'>
       <div class="row">
-        <div class="advantages-container col col-md-6">
+        <div class="advantages-container col-sm-12 col-md-6">
           <span>
             - легкість і невимушеність у заняттях, отримання задоволення від
             спілкування французькою
           </span>
           <i class="advantages-ico fa fa-smile-o"></i>
-        </div>
-        <div class="advantages-container col col-md-6">
-          <i class="advantages-ico fa fa-clock-o "></i>
+          </div>
+        <div class="advantages-container col-sm-12 col-md-6">
+          <i class="advantages-ico fa fa-clock-o"></i>
           <span>
             - гнучкий графік, можливість підібрати найзручніший час для уроків
           </span>
-        </div>
+          </div>
       </div>
     </div>
     <div class='advantages-content container'>
       <div class="row">
-        <div class="advantages-container col col-md-6">
+        <div class="advantages-container col-sm-12 col-md-6">
           <span>
             - підбір та забезпечення усіма потрібними матеріалами, документами та
             книжками, які завжди будуть доступні в електронному варіанті
           </span>
           <i class="advantages-ico fa fa-book"></i>
-        </div>
-        <div class="advantages-container col col-md-6">
+          </div>
+        <div class="advantages-container col-sm-12 col-md-6">
           <i class="advantages-ico fa fa-exchange"></i>
           <span>
             - наявність зворотнього зв’язку в позаурочний час, якщо виникають
             питання, наприклад, безпосередньо в іноземному середовищі
           </span>
-        </div>
+          </div>
       </div>
     </div>
     <div class="free-lesson">
@@ -338,8 +337,8 @@
     <div class="header ">
       <h1>Як ми працюємо ?</h1>
     </div>
-    <div class="row">
-      <ul class="how-we-work-thumbnails thumbnails container">
+    <div class="container">
+      <ul class="how-we-work-thumbnails thumbnails row">
         <li class="col-12 col-md-4">
           <div class="thumbnail">
             <i class="how-we-work-ico fa fa-comment"></i>
@@ -363,8 +362,8 @@
         </li>
     </ul>
   </div>
-  <div class="row">
-    <ul class="how-we-work-thumbnails thumbnails container">
+  <div class="container">
+    <ul class="how-we-work-thumbnails thumbnails row">
         <li class="col-12 col-md-4">
           <div class="thumbnail">
             <i class="how-we-work-ico fa fa-book"></i>
@@ -410,10 +409,10 @@
     </div>
     <div class="feedback-content container-fluid">
       <div class="feedback-container row">
-        <div class="feedback-img col col-md-3">
+        <div class="feedback-img col-sm-12 col-md-3">
           <img src="img/feedback-photo-1.jpeg" alt="">
         </div>
-        <div class="col col-md-9">
+        <div class="col-sm-12 col-md-9">
           <h2>Mohamed Salah, Egypt</h2>
           <span>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis velit ea odit delectus quia suscipit
             expedita molestias molestiae sapiente, inventore magnam soluta placeat aperiam fugit dolore. Ipsam
@@ -423,10 +422,10 @@
     </div>
     <div class="feedback-content container-fluid">
       <div class="feedback-container row">
-        <div class="feedback-img col col-md-3">
+        <div class="feedback-img col-sm-12 col-md-3">
           <img src="img/feedback-photo-1.jpeg" alt="">
         </div>
-        <div class="col col-md-9">
+        <div class="col-sm-12 col-md-9">
           <h2>Mohamed Salah, Egypt</h2>
           <span>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis velit ea odit delectus quia suscipit
             expedita molestias molestiae sapiente, inventore magnam soluta placeat aperiam fugit dolore. Ipsam
@@ -436,10 +435,10 @@
     </div>
     <div class="feedback-content container-fluid">
       <div class="feedback-container row">
-        <div class="feedback-img col col-md-3">
+        <div class="feedback-img col-wm-12 col-md-3">
           <img src="img/feedback-photo-1.jpeg" alt="">
         </div>
-        <div class="col col-md-9">
+        <div class="col-sm-12 col-md-9">
           <h2>Mohamed Salah, Egypt</h2>
           <span>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis velit ea odit delectus quia suscipit
             expedita molestias molestiae sapiente, inventore magnam soluta placeat aperiam fugit dolore. Ipsam
@@ -449,10 +448,10 @@
     </div>
     <div class="feedback-content container-fluid">
       <div class="feedback-container row">
-        <div class="feedback-img col col-md-3">
+        <div class="feedback-img col-sm-12 col-md-3">
           <img src="img/feedback-photo-1.jpeg" alt="">
         </div>
-        <div class="col col-md-9">
+        <div class="col-sm-12 col-md-9">
           <h2>Mohamed Salah, Egypt</h2>
           <span>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis velit ea odit delectus quia suscipit
             expedita molestias molestiae sapiente, inventore magnam soluta placeat aperiam fugit dolore. Ipsam
@@ -485,7 +484,7 @@
     </div>
     <div class="container">
       <ul class="price-container thumbnails row">
-        <li class="price-content col-12 col-md-4">
+        <li class="price-content col-sm-12 col-md-4">
           <div class="price-thumbnail thumbnail">
             <div class="price-thumbnail-content">
               <h3>1 година</h3>
@@ -498,7 +497,7 @@
             </div>
           </div>
         </li>
-        <li class="price-content col-12 col-md-4">
+        <li class="price-content col-sm-12 col-md-4">
           <div class="price-thumbnail thumbnail">
             <div class="price-thumbnail-content">
               <h3>5 годин</h3>
@@ -511,7 +510,7 @@
             </div>
           </div>
         </li>
-        <li class="price-content col-12 col-md-4">
+        <li class="price-content col-sm-12 col-md-4">
           <div class="price-thumbnail thumbnail">
             <div class="price-thumbnail-content">
               <h3>10 годин</h3>
@@ -605,27 +604,10 @@
              <div class="result col-12"></div>
            </div>
         </div>
-        <button class="btn contact-btn"><a href="javascript: void(0);" id="submit">Отправить</a></button>
+        <button class="btn contact-btn"><a href="javascript: void(0);" id="submit">Відправити</a></button>
       </form>
     </section>
   </div>
-<!-- 
-
-
-
-    <div>Ваше Имя:</div>
-<input type="text" name="name" id="name" value="" />
-
-<div>Ваш E-mail <span>*</span>:</div>
-<input type="text" name="email" id="email" value="" />
-
-<div>Сообщение <span>*</span>:</div>
-<textarea name="message" id="message"></textarea>
-
-<div class="result"></div>
-
-<a href="javascript: void(0);" id="submit">Отправить</a> -->
-    
   </div>
   <!-- /END OF CONTACT PAGE -->
 
@@ -646,16 +628,12 @@
   <!-- /END OF FOOTER -->
 
   <!-- SCRIPTS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="scripts/layout.js"></script>
   <script src="scripts/contact.js"></script>
-  <script src="scripts/mail.php"></script>
+  <script src="mail.php"></script>
 </body>
 </html>
