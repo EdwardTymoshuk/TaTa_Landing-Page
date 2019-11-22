@@ -4,7 +4,6 @@ $(document).ready(function () {
     
         var name = $("#name").val();
         var email = $("#email").val();
-        var subj = $("#subject").val();
         var message = $("#message").val(); 
         
         $.ajax({
@@ -15,13 +14,12 @@ $(document).ready(function () {
             data: {
                 "name": name,
                 "email": email,
-                "subject": subj,
                 "message": message
             },
 
             success: function(data) {
-                $(".result").html(data);
-                $("#name").val(''), $("#email").val(''), $("#subject").val(''), $("#message").val('');
+                $(".result").html(data).hide(5000);
+                $("#name").val(''), $("#email").val(''), $("#message").val('');
             }
             
             

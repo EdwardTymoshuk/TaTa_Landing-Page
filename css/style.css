@@ -738,6 +738,9 @@ blockquote:before {
 	}
 }
 @media (min-width: 320px) and (max-width: 767px){
+	.home{
+		background-attachment: scroll;
+	}
 	.navbar {
 		font-size: 1.2em;
 	}
@@ -747,11 +750,6 @@ blockquote:before {
 	.header-socials a {
 		font-size: .6em;
 	}
-	.home{
-	background-color: #fff !important;
-	min-width: 100vw;
-	height: 100vh;
-}
 	.header-socials p {
 		font-size: 1em;
 		margin: 0;
