@@ -139,7 +139,6 @@ html {
     background-size: cover;
 	min-width: 100vw;
 	min-height: 100vh;
-    max-height: 100vh;
 }
 .home-content {
 	margin-top: -100px;

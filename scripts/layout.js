@@ -29,18 +29,6 @@
             }
         }
     });
-    // PAGE NAVIGATION
-    let nav = document.querySelector('#nav');
-    let id = document.querySelectorAll('*[id]');
-    nav.addEventListener('click', (e) => {
-        e.preventDefault();
-        let el = e.path[0];
-        id.forEach(item => {
-            if (`#${item.getAttribute('id')}` === el.getAttribute('href')) {
-                item.scrollIntoView();
-            }
-        })
-    })
 
     // BACK TO TOP
     let btt = document.querySelector('#btt');
