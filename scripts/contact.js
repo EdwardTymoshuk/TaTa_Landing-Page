@@ -18,7 +18,7 @@ $(document).ready(function () {
             },
 
             success: function(data) {
-                $(".result").html(data).hide(5000);
+                $(".result").html(data);
                 $("#name").val(''), $("#email").val(''), $("#message").val('');
             }
             

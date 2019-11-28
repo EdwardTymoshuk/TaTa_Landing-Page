@@ -137,8 +137,7 @@ html {
 	background-attachment: fixed;
 	background-position: left bottom;
     background-size: cover;
-	min-width: 100vw;
-	min-height: 100vh;
+    height: 100vh;
 }
 .home-content {
 	margin-top: -100px;
@@ -499,6 +498,7 @@ html {
 	-webkit-transform: scale(1.1, 1.1);
 	        transform: scale(1.1, 1.1);
 	background-color: burlywood;
+	cursor: pointer;
 }
 /* CONTACT PAGE */
 .contact {
@@ -737,9 +737,6 @@ blockquote:before {
 	}
 }
 @media (min-width: 320px) and (max-width: 767px){
-	.home{
-		background-attachment: scroll;
-	}
 	.navbar {
 		font-size: 1.2em;
 	}
@@ -749,6 +746,9 @@ blockquote:before {
 	.header-socials a {
 		font-size: .6em;
 	}
+	.home{
+    background-attachment: scroll;
+}
 	.header-socials p {
 		font-size: 1em;
 		margin: 0;

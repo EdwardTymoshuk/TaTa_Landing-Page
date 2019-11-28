@@ -40,18 +40,15 @@
 
     // PAGE BUTTONS
     // FREE LESSON BUTTONS
-    const contact = document.querySelector('#contact');
-    const contactForm = document.querySelector('.contact-form');
+    const contactForm = document.querySelector('#contact-form');
     const contactMessage = document.getElementById('message');
-
     let freeLessonsBtns = document.querySelectorAll('#free-lesson-btn');
 
     freeLessonsBtns.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            contactSubject.value = `Безкоштовний перший урок`;
             contactMessage.value = `Доброго дня, я б хотів(-ла) отримати безкоштовний урок французької.`;
-            contact.scrollIntoView();
+            contactForm.scrollIntoView();
         })
     })
     // ORDER LESSONS BUTTONS
@@ -61,21 +58,18 @@
     // order one lesson
     oneHourBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        contactSubject.value = `Замовлення на 1 урок`;
         contactMessage.value = `Доброго дня, я б хотів(-ла) замовити один урок французької.`;
         contactForm.scrollIntoView();
     })
     // order five lessons
     fiveHourBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        contactSubject.value = `Замовлення на 5 уроків`;
         contactMessage.value = `Доброго дня, я б хотів(-ла) замовити п'ять уроків французької із економією 10€.`;
         contactForm.scrollIntoView();
     })
     // order ten lessons
     tenHourBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        contactSubject.value = `Замовлення на 10 уроків`;
         contactMessage.value = `Доброго дня, я б хотів(-ла) замовити десять уроків французької із економією 40€.`;
         contactForm.scrollIntoView();
     })
