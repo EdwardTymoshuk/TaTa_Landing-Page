@@ -19,10 +19,10 @@ $(document).ready(function () {
 
             success: function(data) {
                 $(".result").html(data);
-                $("#name").val(''), $("#email").val(''), $("#message").val('');
-            }
-            
-            
+                if ($("#name").val() != '' && $("#email").val() != '' && $("#message").val() != '') {
+                    $("#name").val(''), $("#email").val(''), $("#message").val('');
+                }
+            } 
         });
     });
     

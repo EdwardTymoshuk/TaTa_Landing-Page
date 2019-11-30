@@ -146,14 +146,14 @@ html {
 	-ms-flex-line-pack: center;
 	align-content: center;
 }
-.home-content h1 {
+.home-content h3 {
 	margin: 10px 0 20px 0;
     text-align: center;
     font-size: 15em;
 	color: #613F75;
 	font-family: 'Lobster', cursive;
 }
-.home-content h3{
+.home-content h1{
     text-align: center;
 	font-size: 3em;
 	color: #613F75;
@@ -197,11 +197,12 @@ html {
 	font-family: 'Bad Script', cursive;
 	text-align: justify;
 }
-.about-me-content h1{
+.about-me-content h2{
 	font-family: 'Yeseva One', cursive;
 	color: #613F75;
 	text-align: center;
 	padding: 75px 0;
+	font-size: 2.5em;
 }
 .about-me-content p{
 	overflow-y: hidden;
@@ -461,7 +462,7 @@ html {
     border-bottom-right-radius: 0;
     color: #fff;
 }
-.price-thumbnail h1 {
+.price-thumbnail h4 {
 	margin: 20px;
     padding-bottom: 40px;
     color: burlywood;
@@ -473,7 +474,7 @@ html {
 	padding: 20px 0;
     font-size: 2em;
 }
-.price-thumbnail h4 {
+.price-thumbnail h5 {
 	color: burlywood;
 	padding: 20px 0;
 	font-size: 2.5em;
@@ -577,30 +578,25 @@ html {
 	text-decoration: none;
 	color: inherit;
 }
+.result {
+	line-height: 1.5em;
+	font-family: 'Yeseva One', cursive;
+	-webkit-transition: all ease .3s;
+	transition: all ease .3s;
+}
 /* FOOTER */
 .footer {
-	height: 100px;
 	background-color: #fff;
 	color: #613F75;
+	padding: 15px;
 }
 .footer div {
 	-ms-flex-item-align: center;
 	    align-self: center;
 }
-.footer h1 {
-	padding: 10px;
+.footer span {
+	padding: 30px 10px;
 	font-size: 1.2em;
-	text-align: start;
-}
-.footer h2 {
-	padding: 10px;
-	font-size: 1.2em;
-	text-align: center;
-}
-.footer h3 {
-	padding: 10px;
-	font-size: 1.2em;
-	text-align: end;
 }
 .footer a {
 	text-decoration: none;
@@ -609,7 +605,7 @@ html {
 }
 .footer a:hover,
 .footer a:hover {
-	color: burlywood;
+	color: rgb(236, 193, 136);
 }
 
 /* HEADER */
@@ -622,6 +618,9 @@ html {
 	color: #613F75;
 	padding: 75px 0;
 	text-align: center;
+}
+.header h2 {
+	font-size: 2.5em;
 }
 /* SEPARATOR BLOCK*/
 .separator {
@@ -723,13 +722,13 @@ blockquote:before {
 		font-family: 'Bad Script', cursive;
 		font-size: 1.3em;
 	}
-	.price-thumbnail h1 {
+	.price-thumbnail h4 {
 		font-size: 4.5em;
 	}
 	.price-thumbnail h3 {
 		font-size: 1.8em;
 	}
-	.price-thumbnail h4 {
+	.price-thumbnail h5 {
 		font-size: 2.2em;
 	}
 	.price-thumbnail p {
@@ -762,13 +761,13 @@ blockquote:before {
 	.header-socials-items a{
 		padding-right: 0;
 	}
-	.home-content h3{
+	.home-content h1{
 		text-align: center;
 		font-size: 2em;
 		color: #613F75;
 		font-family: 'Bad Script', cursive;
 	}
-	.home-content h1{
+	.home-content h3{
 		padding-top: 75px;
 		font-size: 6em;
 	}
@@ -817,7 +816,7 @@ blockquote:before {
 		justify-self: center;
 		font-size: 1em;
 	}
-	.footer h1, h2, h3 {
+	.footer span {
 		text-align: center !important;
 	}
 	.separator h2 {

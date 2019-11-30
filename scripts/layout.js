@@ -73,4 +73,15 @@
         contactMessage.value = `Доброго дня, я б хотів(-ла) замовити десять уроків французької із економією 40€.`;
         contactForm.scrollIntoView();
     })
+
+    const submitBtn = document.querySelector('#submit');
+    const result = document.querySelector('.result');
+
+    const zalupa = () => {
+        result.innerHTML = '';
+    }
+    submitBtn.addEventListener('click', (e) => {
+        e.preventDefault;
+        setTimeout(zalupa, 5000);
+    })
 }())

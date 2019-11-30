@@ -25,10 +25,18 @@
 		$name = strip_tags($_POST["name"]);
 		$email = strip_tags($_POST["email"]); 
 		$mess = strip_tags($_POST["message"]); 
+		
+		if($name == "") {
+
+			echo "Вкажіть будь ласка ім'я.";
+
+			die();
+
+		}
 
 		if(!preg_match("|^([a-z0-9_.-]{1,20})@([a-z0-9.-]{1,20}).([a-z]{2,4})|is", strtolower($email))) { 
 
-			echo "E-mail вказано не корректно.";
+			echo "Вкажіть або перевірте E-mail.";
 
 			die();
 
@@ -36,19 +44,12 @@
 
 		if($mess == "") { 
 
-			echo "Не вказаний текст повідомлення.";
+			echo "Вкажіть будь ласка текст повідомлення.";
 
 			die();
 
 		}
 
-		if($name == "") {
-
-			$name = "Не вказано ім'я";
-
-			die();
-
-		}
 
 		$message = <<<HTML
 
