@@ -297,7 +297,7 @@ html {
 	-webkit-transform: scale(1.1, 1.1);
 	        transform: scale(1.1, 1.1)
 }
-.for-whom-container h2 {
+.for-whom-container h3 {
 	text-align: center;
 	font-family: 'Lobster', cursive;
 	color: #613F75;
@@ -399,10 +399,11 @@ html {
 			transform: scale(1.1, 1.1);
 	z-index: 999;
 }
-.feedback-container h2 {
+.feedback-container h3 {
 	text-align: center;
 	font-family: 'Lobster', cursive;
 	color: #613F75;
+	font-size: 2.5em
 }
 .feedback-container span {
 	text-align: center;
@@ -630,7 +631,7 @@ html {
 	background-color: #fff;
 	margin-bottom: 0;
 }
-.separator h2 {
+.separator h4 {
 	-ms-flex-item-align: end;
 	    align-self: flex-end;
 	text-align: center;
