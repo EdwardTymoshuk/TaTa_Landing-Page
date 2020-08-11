@@ -42,7 +42,7 @@
     // FREE LESSON BUTTONS
     const contactForm = document.querySelector('#contact-form');
     const contactMessage = document.getElementById('message');
-    let freeLessonsBtns = document.querySelectorAll('#free-lesson-btn');
+    let freeLessonsBtns = document.querySelectorAll('.free-lesson-btn');
 
     freeLessonsBtns.forEach(item => {
         item.addEventListener('click', (e) => {

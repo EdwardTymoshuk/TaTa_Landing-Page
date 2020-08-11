@@ -581,6 +581,7 @@ html {
 }
 .result {
 	line-height: 1.5em;
+	height: 50px;
 	font-family: 'Yeseva One', cursive;
 	-webkit-transition: all ease .3s;
 	transition: all ease .3s;
@@ -693,9 +694,6 @@ blockquote:before {
 	border-radius: 50%;
 	font-size: 3em;
 	text-align: center;
-}
-.blockquote p{
-	font-family: 'Bad Script', cursive;
 }
 /* MEDIA QUERIES */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -817,7 +815,7 @@ blockquote:before {
 		justify-self: center;
 		font-size: 1em;
 	}
-	.footer span {
+	.footer div {
 		text-align: center !important;
 	}
 	.separator h2 {
