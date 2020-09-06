@@ -12,8 +12,8 @@
 	
 		function send_form($message) {
 	
-			$mail_to = "eduard.tymoshuk@gmail.com";
-			$subject = "Лист з контактної форми";
+			$mail_to = "tetianamirchukk@gmail.com";
+			$subject = "Message from contact form";
 			$headers = "MIME-Version: 1.0\r\n";
 			$headers .= "Content-type: text/html; charset=utf-8\r\n";
 			$headers .= "From: Система повідомлень <no-reply@".$_SERVER['HTTP_HOST'].">\r\n";
@@ -28,7 +28,7 @@
 		
 		if($name == "") {
 
-			echo "Вкажіть будь ласка ім'я.";
+			echo "Please enter your name.";
 
 			die();
 
@@ -36,7 +36,7 @@
 
 		if(!preg_match("|^([a-z0-9_.-]{1,20})@([a-z0-9.-]{1,20}).([a-z]{2,4})|is", strtolower($email))) { 
 
-			echo "Вкажіть або перевірте E-mail.";
+			echo "Please enter your e-mail.";
 
 			die();
 
@@ -44,7 +44,7 @@
 
 		if($mess == "") { 
 
-			echo "Вкажіть будь ласка текст повідомлення.";
+			echo "Please enter your message.";
 
 			die();
 
@@ -53,15 +53,15 @@
 
 		$message = <<<HTML
 
-			<b>Ім'я</b>: {$name}<br>
+			<b>Name</b>: {$name}<br>
 			<b>E-mail</b>: {$email}<br>
-			<b>Текст письма</b>: {$mess}
+			<b>Message</b>: {$mess}
 
 HTML;
 
 		send_form($message);
 		
-		echo "Ваше повідомлення успішно надіслано. Я відповім вам у найблищий час. Гарного дня!";
+		echo "Your message was sent successfully. I will reply to you soon. Have a good day!";
 
 	} else {
 

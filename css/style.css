@@ -78,6 +78,12 @@ html {
 .header-languages a:hover {
 	color: #613F75;
 }
+.header-languages img {
+	height:1.7em;width:auto;transition: all .3s ease
+}
+.header-languages img:hover {
+	transform: scale(1.5)
+}
 .navbar {
 	font-family: 'Lobster', cursive;
 	font-size: 2em;
@@ -216,53 +222,39 @@ html {
 	min-height: 100vh;
 	width: 100vw;
 }
-.advantages-content {
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-}
-.advantages-content:first-child {
-	-ms-flex-line-pack: start;
-	    align-content: flex-start;
-}
 .advantages-container {
-	text-align: justify;
+	padding: 0;
+	margin: 0;
 	display: grid;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	align-self: center;
-	grid-template-columns: 3fr 1fr;
-	-webkit-transition: ease-in .2s;
-	transition: ease-in .2s;
-	padding: 25px;
+	grid-template-columns: 1fr 1fr;
 }
-.advantages-container:last-child {
-	grid-template-columns: 1fr 3fr;
+.advantages-container-photo {
+	width: 50vw;
+	height: auto;
+	padding: 0;
+	margin: 0;
 }
-.advantages-container:hover {
-	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
-	border-radius: 20px;
+.advantages-container-photo img {
+	max-width: 100%;
+	max-height: 100%;
+	height: -moz-available;          /* WebKit игнор. */
+    height: -webkit-fill-available;  /* Mozilla игнор. */
+	height: fill-available;
+	float: right;
+	border-left: 5px solid #613F75;
 }
-.advantages-container span {
-	font-size: 1.7em;
-	text-align: justify;
+.advantages-container-content {
+	align-content: center;
+}
+.advantages-container-content-list {
+	list-style: none;
+	display: grid;
+	grid-template-rows: repeat(6, 1fr);
+}
+.advantages-container-content-list p {
+	color: #000;
 	font-family: 'Bad Script', cursive;
-	margin: 20px;
-}
-.advantages-ico {
-	display: grid;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	font-size: 7em;
-	padding: inherit;
-}
-.advantages-container:hover,
-.advantages-container:focus {
-	background-color: #fff;
-	cursor: pointer;
+	font-size: 1.5em;
 }
 /* FOR WHOM PAGE */
 .for-whom {
@@ -326,44 +318,41 @@ html {
 	min-height: 100vh;
 	width: 100vw;
 }
-.how-we-work-thumbnails {
+.how-we-work-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.how-we-work-container-photo {
+	width: 50vw;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+.how-we-work-container-photo img {
+	max-width: 100%;
+	max-height: 100%;
+	height: -moz-available;          /* WebKit игнор. */
+    height: -webkit-fill-available;  /* Mozilla игнор. */
+	height: fill-available;
+	border-right: 5px solid #613F75;
+}
+.how-we-work-container-content {
+	align-content: center;
+}
+.how-we-work-container-content-list {
 	list-style: none;
-	padding: 25px;
-	text-align: center;
-	margin-bottom: 0;
+	display: grid;
+	grid-template-rows: repeat(6, 1fr);
 }
-.how-we-work-thumbnails .thumbnail {
-	background-color: transparent;
-	border: none;
-}
-.how-we-work-thumbnails h3 {
-	font-family: 'Yeseva One', cursive;
+.how-we-work-container-content-list h3 {
+	font-family: 'Lobster', cursive;
 	color: #613F75;
-	font-size: 2em;
+	font-size: 2.2em
 }
-.how-we-work-thumbnails p {
+.how-we-work-container-content-list p {
 	color: #000;
 	font-family: 'Bad Script', cursive;
-	font-size: 1.7em;
-}
-.how-we-work-ico {
-	display: grid;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	font-size: 14em;
-	padding: inherit;
-}
-.thumbnail {
-	-webkit-transition: ease-in .2s;
-	transition: ease-in .2s;
-	border-radius: 20px;
-}
-.thumbnail:hover {
-	background-color: #fff;
-	cursor: pointer;
-	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
+	font-size: 1.5em;
 }
 /* FEEDBACK PAGE */
 .feedback {
@@ -453,6 +442,7 @@ html {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	border-radius: 20px;
 }
 .price-thumbnail-content {
 	background-color: #613F75;
@@ -651,6 +641,7 @@ html {
 	-ms-flex-item-align: center;
 	    align-self: center;
 	justify-self: center;
+	text-align: center;
 }
 .free-lesson button {
 	height: 75px;
@@ -774,11 +765,16 @@ blockquote:before {
 		 padding-bottom: 20px;
 	}
 	.advantages-container {
-		padding: 20px;
+		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 	.advantages-container span {
 		margin: 10px;
 		font-size: 1.3em;
+	}
+	.advantages-container-photo {
+		display: none;
 	}
 	.for-whom-content {
 		padding: 20px 20px;
@@ -792,17 +788,13 @@ blockquote:before {
 	.for-whom-ico {
 		display: none;
 	}
-	.thumbnail {
-		padding: 10px;
+	.how-we-work-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: center;
 	}
-	.how-we-work-thumbnails h3 {
-		font-size: 2em;
-	}
-	.how-we-work-thumbnails p {
-		font-size: 1.3em;
-	}
-	.how-we-work-ico {
-		font-size: 9em;
+	.how-we-work-container-photo {
+		display: none;
 	}
 	.feedback-content {
 		padding: 10px 30px;

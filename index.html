@@ -24,12 +24,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- HOME PAGE -->
-  <div id="home" class="home">
+  <section id="home" class="home">
     <header id="header-block" class="header-block fixed-top">
       <div id="header-panel" class="header-panel container-fluid">
         <div class="row">
@@ -49,12 +49,11 @@
           </div>
           <div class="header-languages col">
             <div>
-              <a href="#">УКР</a>
-              <span>/</span>
-              <a href="#">EN</a>
+               <a href="#"><img src="img/flag-ua.png" style="height:3.2em" onmouseover="this.style.transform='none';"/></a>
+              <a href="en/"><img src="img/flag-uk.png"/></a>
             </div>
-          </div>
         </div>
+      </div>
       </div>
       <div class="header-navbar">
         <nav id="nav" class="navbar navbar-expand-md mx-auto">
@@ -95,21 +94,21 @@
         </nav>
       </div>
     </header>
-    <div class="home-content container-fluid">
+    <article class="home-content container-fluid">
       <h3 class="">TаTа</h3>
       <h1 class="">Твій онлайн вчитель французької мови</h1>
-    </div>
-  </div>
+    </article>
+  </section>
   <!-- /END OF HOME PAGE -->
 
   <!-- ABOUT ME PAGE -->
-  <div id="about-me" class="about-me">
-    <div class="about-me-container container">
+  <section id="about-me" class="about-me">
+    <article class="about-me-container container">
       <div class="row">
-        <div class="about-me-photo col-sm-12 col-md-6">
+        <aside class="about-me-photo col-sm-12 col-md-6">
           <img src="img/about-me-photo.png" alt="">
-        </div>
-        <div class="about-me-content col-sm-12 col-md-6">
+        </aside>
+        <aside class="about-me-content col-sm-12 col-md-6">
           <h2>Хто я ?</h2>
           <p>Я – Тетяна Андрейчук, вчитель, перекладач і просто людина, яка закохана у
             французьку мову, і яка завжди готова ділитися своїми знаннями з усіма бажаючими.
@@ -132,12 +131,12 @@
             індустрії, я зрозуміла, що одне з моїх покликань – це сіяти розумне, добре та вічне. З
             тих пір я займаюсь виключно викладанням по Skype.
           </p>
-        </div>
+        </aside>
       </div>
-    </div>
-    <div class="about-me-container container">
+    </article>
+    <article class="about-me-container container">
       <div class="row">
-        <div class="about-me-content col-sm-12 col-md-6">
+        <aside class="about-me-content col-sm-12 col-md-6">
           <h2>Досвід роботи:</h2>
           <ul>
             <li>
@@ -157,86 +156,65 @@
               Великобританії, з Канади, з США тощо (викладання англійською мовою).
             </li>
           </ul>
-        </div>
-        <div class="about-me-photo col-sm-12 col-md-6">
+        </aside>
+        <aside class="about-me-photo col-sm-12 col-md-6">
           <img src="img/about-me-photo-1.png" alt="">
-        </div>
+        </aside>
       </div>
-    </div>
-  </div>
+    </article>
+  </section>
   <!-- /END OF ABOUT ME PAGE -->
 
   <!-- VIDEO BLOCK -->
-  <div class="embed-responsive embed-responsive-16by9">
+  <section class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4xa1QhByqNc" autostart="false" preload="none"
       allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" controls allowfullscreen></iframe>
-  </div>
+  </section>
   <!-- /END OF VIDEO BLOCK -->
 
   <!-- ADVANTAGES PAGE -->
-  <div id="advantages" class="advantages">
-    <div class="header ">
-      <h2>Що ви отримуєте навчаючись зі мною ?</h2>
-    </div>
-    <div class='advantages-content container-fluid'>
-      <div class="row">
-        <div class="advantages-container col-sm-12 col-md-6">
-          <span>
-            - можливість інтенсивної мовної практики у себе вдома чи на роботі
-          </span>
-          <i class="advantages-ico fa fa-comments"></i>
-        </div>
-        <div class="advantages-container col-sm-12 col-md-6">
-          <i class="advantages-ico fa fa-line-chart"></i>
-          <span>
-            - розробка індивідуального плану уроку та матеріалів до нього,
-            обговорення тем, які сфокусовані саме на ваших вподобаннях та цілях
-          </span>
-        </div>
-        </div>
+    <section id="advantages" class="advantages">
+      <article class="advantages-container">
+    <aside class="how-we-work-container-content container">
+      <header class="header">
+        <h2>Що ви отримуєте навчаючись зі мною ?</h2>
+      </header>
+      <ul class="advantages-container-content-list">
+        <li>
+          <p>- можливість <strong>інтенсивної мовної практики</strong> у себе вдома чи на роботі</p>
+        </li>
+        <li>
+          <p> - розробка <strong>індивідуального плану уроку та матеріалів до нього</strong>,
+            обговорення тем, які сфокусовані саме на ваших вподобаннях та цілях</p>
+        </li>
+        <li>
+            <p>- <strong>легкість і невимушеність</strong> у заняттях, отримання задоволення від
+              спілкування французькою</p>
+        </li>
+        <li>
+          <p>- <strong>гнучкий графік</strong>, можливість підібрати найзручніший час для уроків</p>
+        </li>
+        <li>
+          <p>- підбір та забезпечення <strong>усіма потрібними матеріалами, документами та
+            книжками</strong>, які завжди будуть доступні в електронному варіанті</p>
+        </li>
+        <li>
+          <p> - наявність <strong>зворотнього зв’язку в позаурочний час</strong>, якщо виникають
+            питання, наприклад, безпосередньо в іноземному середовищі</p>
+        </li>
+      </ul>
+      <div class="free-lesson">
+        <button class="free-lesson-btn">Хочу безкоштовний пробний урок</button>
       </div>
-    <div class='advantages-content container-fluid'>
-      <div class="row">
-        <div class="advantages-container col-sm-12 col-md-6">
-          <span>
-            - легкість і невимушеність у заняттях, отримання задоволення від
-            спілкування французькою
-          </span>
-          <i class="advantages-ico fa fa-smile-o"></i>
-          </div>
-        <div class="advantages-container col-sm-12 col-md-6">
-          <i class="advantages-ico fa fa-clock-o"></i>
-          <span>
-            - гнучкий графік, можливість підібрати найзручніший час для уроків
-          </span>
-          </div>
-      </div>
-    </div>
-    <div class='advantages-content container-fluid'>
-      <div class="row">
-        <div class="advantages-container col-sm-12 col-md-6">
-          <span>
-            - підбір та забезпечення усіма потрібними матеріалами, документами та
-            книжками, які завжди будуть доступні в електронному варіанті
-          </span>
-          <i class="advantages-ico fa fa-book"></i>
-          </div>
-        <div class="advantages-container col-sm-12 col-md-6">
-          <i class="advantages-ico fa fa-exchange"></i>
-          <span>
-            - наявність зворотнього зв’язку в позаурочний час, якщо виникають
-            питання, наприклад, безпосередньо в іноземному середовищі
-          </span>
-          </div>
-      </div>
-    </div>
-    <div class="free-lesson">
-      <button class="free-lesson-btn">Хочу безкоштовний пробний урок</button>
-    </div>
-  </div>
+    </aside>
+    <aside class="advantages-container-photo container">
+      <img src="/img/advantages-photo1.jpg" alt="advantages photo">
+  </aside>
+    </article>
+      </section>
   <!-- /END OF ADVANTAGES PAGE -->
 
-  <div class="separator jumbotron container-fluid">
+  <section class="separator jumbotron container-fluid">
     <div class="row">
       <div class="col-sm-4">
         <h4>5+ років</h4>
@@ -251,14 +229,14 @@
         <p>Кількість осіб, яким я допомогла у вивчені французької мови.</p>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- FOR WHOM PAGE -->
-  <div id="for-whom" class="for-whom">
-    <div class="header evealator-once">
+  <section id="for-whom" class="for-whom">
+    <header class="header evealator-once">
       <h2>Для кого навчання ? Якщо Ви:</h2>
-    </div>
-    <div class='for-whom-content container-fluid'>
+    </header>
+    <article class='for-whom-content container-fluid'>
       <div class="for-whom-container row">
         <div class="col-sm-12 col-md-7">
           <h3>Початківець</h3>
@@ -272,8 +250,8 @@
           <i class="fa fa-user"></i>
         </div>
       </div>
-    </div>
-    <div class='for-whom-content container-fluid'>
+    </article>
+    <article class='for-whom-content container-fluid'>
       <div class="for-whom-container row">
         <div class="for-whom-ico col-md-5">
           <i class="fa fa-plane"></i>
@@ -290,8 +268,8 @@
           </span>
         </div>
       </div>
-    </div>
-    <div class='for-whom-content container-fluid'>
+    </article>
+    <article class='for-whom-content container-fluid'>
       <div class="for-whom-container row">
         <div class="col-sm-12 col-md-7">
           <h3>Мешкаєте у франкомовній країні та бажаєте професійного росту </h3>
@@ -305,8 +283,8 @@
           <i class="fa fa-globe"></i>
         </div>
       </div>
-    </div>
-    <div class='for-whom-content container-fluid'>
+    </article>
+    <article class='for-whom-content container-fluid'>
       <div class="for-whom-container row">
         <div class="for-whom-ico col-md-5">
           <i class="fa fa-graduation-cap"></i>
@@ -319,15 +297,15 @@
           </span>
         </div>
       </div>
-    </div>
-    <div class="free-lesson">
+    </article>
+    <aside class="free-lesson">
       <button class="free-lesson-btn">Хочу безкоштовний пробний урок</button>
-    </div>
-  </div>
+    </aside>
+  </section>
   <!-- /END FOR WHOM PAGE -->
 
   <!-- BLOCKQUOTE -->
-  <div class="jumbotron separator blockquote container-fluid">
+  <section class="jumbotron separator blockquote container-fluid">
     <div class="row">
       <div class="col">
         <blockquote>
@@ -335,69 +313,52 @@
         </blockquote>
       </div>
     </div>
-  </div>
+  </section>
   <!-- END OF BLOCKQUOTE -->
 
   <!-- HOW WE WORK PAGE -->
-  <div id="how-we-work" class="how-we-work">
-    <div class="header ">
+  <section id="how-we-work" class="how-we-work">
+    <article class="how-we-work-container">
+    <aside class="how-we-work-container-photo container">
+      <img src="/img/how-we-work-photo1.jpg" alt="how we word photo">
+  </aside>
+  <aside class="how-we-work-container-content container">
+    <header class="header">
       <h2>Як ми працюємо ?</h2>
-    </div>
-    <div class="container-fluid">
-      <ul class="how-we-work-thumbnails thumbnails row">
-        <li class="col-12 col-md-4">
-          <div class="thumbnail">
-            <i class="how-we-work-ico fa fa-comment"></i>
-            <h3>Говоріння</h3>
-            <p>Спілкуємося і насолоджуємося мовою.</p>
-          </div>
-        </li>
-        <li class="col-12 col-md-4">
-          <div class="thumbnail">
-            <i class="how-we-work-ico fa fa-headphones"></i>
-            <h3>Слухання</h3>
-            <p>Вчимося розуміти почуте.</p>
-          </div>
-        </li>
-        <li class="col-12 col-md-4">
-          <div class="thumbnail">
-            <i class="how-we-work-ico fa fa-file-word-o"></i>
-            <h3>Словниковий запас</h3>
-            <p>Вивчаємо нові слова та фрази.</p>
-          </div>
-        </li>
+    </header>
+    <ul class="how-we-work-container-content-list">
+      <li>
+        <h3>Говоріння</h3>
+        <p>Спілкуємося і насолоджуємося мовою.</p>
+      </li>
+      <li>
+        <h3>Слухання</h3>
+        <p>Вчимося розуміти почуте.</p>
+      </li>
+      <li>
+          <h3>Словниковий запас</h3>
+          <p>Вивчаємо нові слова та фрази.</p>
+      </li>
+      <li>
+        <h3>Читання</h3>
+        <p>Навчаємося читати та проникати у текст.</p>
+      </li>
+      <li>
+        <h3>Граматика</h3>
+        <p>Опановуємо необхідні граматичні конструкції, вживаємо їх у мові.</p>
+      </li>
+      <li>
+        <h3>Фільми/Відео</h3>
+        <p>Переглядаємо серіали, блоги з використанням сучасної французької мови.</p>
+      </li>
     </ul>
-  </div>
-  <div class="container-fluid">
-    <ul class="how-we-work-thumbnails thumbnails row">
-        <li class="col-12 col-md-4">
-          <div class="thumbnail">
-            <i class="how-we-work-ico fa fa-book"></i>
-            <h3>Читання</h3>
-            <p>Навчаємося читати та проникати у текст.</p>
-          </div>
-        </li>
-        <li class="col-12 col-md-4">
-          <div class="thumbnail">
-            <i class="how-we-work-ico fa fa-pencil"></i>
-            <h3>Граматика</h3>
-            <p>Опановуємо необхідні граматичні конструкції, вживаємо їх у мові.</p>
-          </div>
-        </li>
-        <li class="col-12 col-md-4">
-          <div class="thumbnail">
-            <i class="how-we-work-ico fa fa-file-video-o"></i>
-            <h3>Фільми/Відео</h3>
-            <p>Переглядаємо серіали, блоги з використанням сучасної французької мови.</p>
-          </div>
-        </li>
-    </ul>
-  </div>
-  </div>
+  </aside>
+  </article>
+    </section>
   <!-- /END OF HOW WE WORK PAGE -->
 
   <!-- BLOCKQUOTE -->
-  <div class="jumbotron separator blockquote container-fluid">
+  <section class="jumbotron separator blockquote container-fluid">
     <div class="row">
       <div class="col">
         <blockquote>
@@ -405,15 +366,15 @@
         </blockquote>
       </div>
     </div>
-  </div>
+  </section>
   <!-- /END OF BLOCKQUOTE -->
 
   <!-- FEEDBACK PAGE -->
-  <div id="feedback" class="feedback">
-    <div class="header ">
+  <section id="feedback" class="feedback">
+    <header class="header ">
       <h2>Що мої учні говорять про мене ?</h2>
-    </div>
-    <div class="feedback-content container-fluid">
+    </header>
+    <article class="feedback-content container-fluid">
       <div class="feedback-container row">
         <div class="feedback-img col-sm-12 col-md-3">
           <img src="img/feedback-photo-oleg.jpg" alt="">
@@ -427,11 +388,11 @@
             Я дуже задоволений прогресом, бачу результат, тим більше, що уроки з Тетяною це хороше поєднання ціни та якості викладання, тому з впевненістю можу рекомендувати її усім."</span>
         </div>
       </div>
-    </div>
-    <div class="feedback-content container-fluid">
+    </article>
+    <article class="feedback-content container-fluid">
       <div class="feedback-container row">
         <div class="feedback-img col-sm-12 col-md-3">
-          <img src="img/feedback-photo-1.jpeg" alt="">
+          <img src="img/feedback-photo-flo.jpg" alt="">
         </div>
         <div class="col-sm-12 col-md-9">
           <h3>Flo Kartner, Great Britain</h3>
@@ -441,8 +402,8 @@
             I am also very grateful for how accommodating of my work rota, our lessons are at a different time every week and I often have to change them at late notice."</span>
         </div>
       </div>
-    </div>
-    <div class="feedback-content container-fluid">
+    </article>
+    <article class="feedback-content container-fluid">
       <div class="feedback-container row">
         <div class="feedback-img col-wm-12 col-md-3">
           <img src="img/feedback-photo-brad.jpg" alt="">
@@ -457,11 +418,11 @@
             I consider this to be a sign of a good teacher."</span>
         </div>
       </div>
-    </div>
-    <div class="feedback-content container-fluid">
+    </article>
+    <article class="feedback-content container-fluid">
       <div class="feedback-container row">
         <div class="feedback-img col-sm-12 col-md-3">
-          <img src="img/feedback-photo-1.jpeg" alt="">
+          <img src="img/feedback-photo-maria.jpg" alt="">
         </div>
         <div class="col-sm-12 col-md-9">
           <h3>Мария, Россия</h3>
@@ -470,15 +431,15 @@
             Очень рекомендую Татьяну  как профессионала своего дела."</span>
         </div>
       </div>
-    </div>
-    <div class="free-lesson">
+    </article>
+    <aside class="free-lesson">
       <button class="free-lesson-btn">Хочу безкоштовний пробний урок</button>
-    </div>
-  </div>
+    </aside>
+  </section>
   <!-- /END OF FEEDBACK PAGE -->
 
   <!-- BLOCKQUOTE -->
-  <div class="jumbotron separator blockquote container-fluid">
+  <section class="jumbotron separator blockquote container-fluid">
     <div class="row">
       <div class="col">
         <blockquote>
@@ -486,15 +447,15 @@
         </blockquote>
       </div>
     </div>
-  </div>
+  </section>
   <!-- /END OF BLOCKQUOTE -->
 
   <!-- PRICE PAGE -->
-  <div id="price" class="price">
-    <div class="header ">
+  <section id="price" class="price">
+    <header class="header ">
       <h2>Скільки коштує навчання зі мною ?</h2>
-    </div>
-    <div class="container-fluid">
+    </header>
+    <article class="container-fluid">
       <ul class="price-container thumbnails row">
         <li class="price-content col-sm-12 col-md-4">
           <div class="price-thumbnail thumbnail">
@@ -536,12 +497,12 @@
           </div>
         </li>
       </ul>
-    </div>
-  </div>
+    </article>
+  </section>
   <!-- /END OF PRICE PAGE  -->
 
   <!-- BLOCKQUOTE -->
-  <div class="jumbotron separator blockquote container-fluid">
+  <section class="jumbotron separator blockquote container-fluid">
     <div class="row">
       <div class="col">
         <blockquote>
@@ -549,26 +510,26 @@
         </blockquote>
       </div>
     </div>
-  </div>
+  </section>
   <!-- /END OF BLOCKQUOTE -->
 
   <!-- CONTACT PAGE -->
-  <div id="contact" class="contact">
-    <div class="header">
+  <section id="contact" class="contact">
+    <header class="header">
       <h2>Як зі мною зв'язатися ?</h2>
-    </div>
+    </header>
   <div class="contact-container container-fluid">
-    <section class="row">
-      <article class="contact-article col-12">
+    <article class="row">
+      <div class="contact-article col-12">
         <span>
           Для того, щоб дізнатися більше про вивчення французької онлайн через скайп,
           Ви можете зв'язатися зі мною через соц. мережі або просто залишити заявку у формі нище.
 
         </span>
-      </article>
-    </section>
-    <section class="row">
-      <article class="contact-social col-12 col-md-4">
+      </div>
+    </article>
+    <article class="row">
+      <aside class="contact-social col-12 col-md-4">
         <div class="conatainer-fluid">
           <div class="row">
             <div class="col-sm-4 col-md-12">
@@ -585,7 +546,7 @@
             </div>
           </div>
         </div>
-      </article>
+      </aside>
       <form id="contact-form" class="contact-form col-12 col-md-8">
         <div class="form-group container-fluid">
           <div class="row">
@@ -612,33 +573,33 @@
         </div>
         <button class="btn contact-btn"><a href="javascript: void(0);" id="submit">Відправити</a></button>
       </form>
-    </section>
+    </article>
   </div>
-  </div>
+</section>
   <!-- /END OF CONTACT PAGE -->
 
   <!-- FOOTER -->
-  <div id="footer" class="footer container-fluid">
+  <footer id="footer" class="footer container-fluid">
     <div class="row">
-      <div class="col-md-4 text-left">
+      <aside class="col-md-4 text-left">
         <span>@2019 TaTa. Your online french teacher</span>
-      </div>
-      <div class="col-md-4 text-center">
+      </aside>
+      <aside class="col-md-4 text-center">
         <span>Website is made by <a href="https://www.instagram.com/edward__t" target="_blank">Edward T</a></span>
-      </div>
-      <div class="col-md-4 text-right">
+      </aside>
+      <aside class="col-md-4 text-right">
         <span><a id="btt" href="#home">Back to top</a></span>
-      </div>
+      </aside>
     </div>
-  </div>
+  </footer>
   <!-- /END OF FOOTER -->
 
   <!-- SCRIPTS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="scripts/layout.js"></script>
-  <script src="scripts/contact.js"></script>
+  <script src="scripts/contact.min.js"></script>
+  <script src="scripts/jayout.min.js"></script>
   <script src="mail.php"></script>
 </body>
 </html>
