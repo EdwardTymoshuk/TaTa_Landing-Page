@@ -73,7 +73,7 @@
         contactMessage.value = `Доброго дня, я б хотів(-ла) замовити десять уроків французької із економією 40€.`;
         contactForm.scrollIntoView();
     })
-
+    // contact form send function
     const submitBtn = document.querySelector('#submit');
     const result = document.querySelector('.result');
 
